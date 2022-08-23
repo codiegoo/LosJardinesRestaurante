@@ -1,0 +1,391 @@
+body {
+    background-color: #FFFFFF;
+}
+
+/*-------------------------MENU DE NAVEGACION----------------  */
+nav {
+    margin-bottom: 136px; /* MARGINS */
+    background: #92B4EC;
+    /* background: linear-gradient(90deg, rgba(159,144,234,1) 15%, rgba(208,253,215,1) 50%, rgba(159,144,234,1) 85%); */
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+ul {
+    margin: 0; /* MARGINS */
+    /* padding: 32px; */
+    text-decoration: none;
+    display: flex;
+}
+nav img {
+    width: 48px;
+    margin: 16px; /* MARGINS */
+    border: 3px solid #92B4EC;
+    border-radius: 30px;
+}
+nav img:hover {
+    border: 3px solid #FFD24C;
+}
+ul li {
+    text-decoration: none;
+    background: transparent; /* COLOR DE FONDO */
+    text-align: center; /* ALINEACION DE TEXTOS */
+    padding: 34px; /*  PADDING */
+    list-style: none; /* ESTILO DE LISTAS */
+}
+ul li:hover {
+    background: #FFD24C;
+    border-radius: 20px;
+}
+
+ul li a {
+    color: #000;
+    /* color: #176446; */
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;     /* TIPOGRAFIA */
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 450px){
+    ul{
+        padding: 0;
+    }
+    ul li {
+        padding: 8px 4px 4px 4px;
+        
+    }
+    ul li:focus {
+        background: #FFD24C;
+    }
+    ul li a {
+        font-size: 12px;
+    }
+    nav img {
+        width: 32px;
+        margin: 0;
+    }
+    nav {
+        margin-bottom: 94px;
+    }
+}
+
+
+/* ----------FOOTER---------- */
+
+
+footer {
+    background: #92B4EC;
+    margin: 0;
+    padding-top: 16px;
+}
+footer .contacto .contenedor h3 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+}
+footer .contacto .contenedor form.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
+    width: 400px;
+    height: 32px;
+    margin-bottom: 8px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+footer .contacto .contenedor form.formulario .boton-formulario {
+    padding: 8px;
+    margin-bottom: 16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    background-color: #92B4EC;
+    border: #92B4EC; /* BORDERS */
+}
+footer .contacto .contenedor form.formulario .boton-formulario:hover {
+    background: #64c27b;
+    color: #fff;
+    border: #64c27b; /* BORDERS */
+}
+
+
+@media screen and (max-width: 450px){
+    footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
+        width: 232px;
+        height: 24px;
+    }
+}
+
+/* --------INICIO ----------*/
+
+
+
+
+header {
+    background-image: url(../img/banner-lj.jpg); /* IMAGEN DE FONDO */
+    background-repeat: no-repeat;
+    height: 640px;
+}
+
+header .inicio {
+    background-color: rgba(75, 75, 75, 0.5);
+    border: 5px solid #FFD24C;
+    width: 360px;
+    height: auto;
+    text-align: center;
+    padding: 32px;
+    margin: auto;
+    border-radius: 10px; /* BORDERS */
+}
+header .inicio img {
+    width: 128px;
+    text-align: center;
+}
+header .contenedor-inicio .inicio .contenedor-texto h1 {
+    font-family: 'Merienda';
+    color: #FFD24C;
+}
+header .contenedor-inicio .inicio .contenedor-texto h2 {
+    font-family: 'Poppins';
+    font-weight: 100;
+    color: #FFD24C;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: 532px;
+    }
+    header .inicio {
+        width: 184px;
+        padding: 16px;
+    }
+    header .contenedor-inicio .inicio .contenedor-texto h2 {
+        font-size: 16px;
+    }
+    header .contenedor-inicio .inicio .contenedor-texto h1 {
+        margin-top: 0;
+    }
+}
+
+
+/* -----------GALERIA SECCION------------- */
+
+
+
+
+.nav-galeria {
+    margin: 0;
+}
+
+.grid-galeria {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+}
+.grid-galeria .grid-item {
+    border-radius: 8%;
+}
+.grid-galeria .grid-item img {
+    border-radius: 8%;
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 450px) {
+    .grid-galeria .grid-item img {
+        height: 132px;
+    }
+    .grid-galeria {
+        margin: 8px;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
+/* ---------------MENU SECCION------------ */
+
+
+
+
+
+nav.menu-nav {
+    margin-bottom: 0%;
+}
+.contenedor-menu {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.contenedor-menu h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin: 2% 45%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FFD24C;
+    font-family: 'Merienda';
+    background-color: rgb(255, 230, 154, .5);
+}
+.contenedor-menu .contenedor-comidas .entradas .comida-entradas {
+    background-color: #92B4EC;
+    border-radius: 8%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.contenedor-menu .contenedor-comidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 16px;
+    gap: 16px;
+}
+.contenedor-menu .contenedor-comidas .entradas, .desayunos, .comidas, .barra-mexa, .ensaladas {
+    text-align: center;
+    /* margin: 8px; */
+    /* padding: 16px; */
+    background-color: #FFD24C;
+    border-radius: 20px;
+}
+.contenedor-menu .contenedor-comidas .texto-comida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-menu .contenedor-comidas h3 {
+    font-family: 'Merienda';
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor-menu .contenedor-comidas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ----------------UBICACION SECCION------------- */
+
+
+
+.nav-ubicacion {
+    margin: 0;
+}
+.contenedor-ubicacion {
+    background-color: #FFD24C;
+    margin: 64px 0;
+    margin-right: 64px;
+    padding: 64px 64px 64px 0px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-ubicacion h2 {
+    margin: 0;
+}
+.contenedor-ubicacion .contenedor-texto-ubicacion .btn-rappi, .btn-uberEats {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 16px;
+    align-items: center;
+    width: 128px;
+    background-color: #92B4EC;
+    height: 32px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .contenedor-ubicacion {
+        margin: 0;
+        display: block;
+        margin-right: 0px;
+        padding: 32px 32px 32px 32px;
+        border-radius: 0;
+    }
+}
+
+/* --------------RESERVAR SECCION ---------*/
+
+
+
+
+.nav-reservar {
+    margin: 0;
+}
+.contenedor-reservar {
+    background-color: #FFD24C;
+    margin: 64px 0;
+    margin-left: 64px;
+    padding: 64px 0px 64px 64px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-reservar img {
+    width: 60%;
+    height: 348px;
+    margin-right: 64px;
+}
+.contenedor-reservar .contenedor-texto-reservar {
+    height: 348px;
+    background-color: #FFE69A;
+}
+.contenedor-reservar .contenedor-texto-reservar a {
+    padding: 16px;
+    background-color: #92B4EC;
+    border-radius: 10px;
+}
+
+
+
+
+/* -----------------SECCION CLIENTES--------------- */
+
+
+
+
+.nav-clientes {
+    margin: 0%;
+}
+.contenedor-clientes h2, h3 {
+    text-align: center;
+    font-family: 'Poppins';
+}
+.contenedor-clientes img {
+    width: 64px;
+    border-radius: 32px;
+}
+.contenedor-clientes .contenedor-opiniones-clientes {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.contenedor-clientes .contenedor-opiniones-clientes .cliente {
+    width: 148px;
+    height: auto;
+    text-align: center;
+}
+.contenedor-clientes .contenedor-opiniones-clientes button {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.contenedor-clientes .tu-opinion-contenedor {
+    width: 348px;
+    margin-left: 35%;
+}
+.contenedor-clientes .tu-opinion-contenedor .contenedor-datos-opinion {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
